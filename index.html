@@ -7,10 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
         header {
             background-color: #1a1a2e;
@@ -18,17 +19,34 @@
             text-align: center;
             padding: 2rem;
         }
-        .hero-image {
-            display: flex;
-            justify-content: center;
-            margin: 2rem;
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
         }
-        .hero-image img {
-            max-width: 80%;
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .hero img {
+            max-width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        .cta-button {
+        .button {
             display: inline-block;
             background-color: #e94560;
             color: white;
@@ -36,7 +54,16 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            margin: 1rem;
+            margin: 1rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -45,11 +72,23 @@
         <h1>Tintin sur la Lune : et si sa tenue était encore plus réaliste ?</h1>
         <p>Un projet créatif pour repenser l’équipement spatial de Tintin, entre fidélité à Hergé et innovations scientifiques.</p>
     </header>
-    <div class="hero-image">
-        <img src="tintin-cosmonaute-lune.jpg" alt="Comparaison tenue originale et améliorée">
-    </div>
-    <div style="text-align: center;">
-        <a href="projet.html" class="cta-button">Découvrir le projet</a>
-    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="projet.html">Le Projet</a>
+        <a href="ameliorations.html">Les Améliorations</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="tintin-cosmonaute-lune.jpg" alt="Comparaison tenue originale et améliorée">
+            <p>Découvrez comment j’ai repensé la tenue de Tintin pour la rendre plus réaliste, tout en gardant l’esprit de la ligne claire.</p>
+            <a href="projet.html" class="button">Découvrir le projet</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 - Projet Tintin sur la Lune</p>
+    </footer>
 </body>
 </html>
