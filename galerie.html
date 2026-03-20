@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Projet - Tintin sur la Lune</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Galerie - Tintin sur la Lune</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pourquoi améliorer la tenue de Tintin ?</h1>
+        <h1>Galerie : Avant/Après</h1>
     </header>
     <nav>
         <a href="index.html">Accueil</a>
@@ -19,18 +72,12 @@
         <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <section>
-            <h2>Contexte</h2>
-            <p>Dans "On a marché sur la Lune" (1954), Hergé imagine une tenue spatiale pour Tintin. Mais avec les connaissances actuelles, que pourrait-on améliorer ?</p>
-        </section>
-        <section>
-            <h2>Objectifs</h2>
-            <ul>
-                <li>Rester fidèle à l’univers graphique de Tintin.</li>
-                <li>Intégrer des éléments réalistes inspirés des vraies combinaisons spatiales.</li>
-                <li>Proposer une tenue fonctionnelle pour une mission lunaire en 2026.</li>
-            </ul>
-        </section>
+        <div class="gallery">
+            <img src="images/tenue-originale.jpg" alt="Tenue originale">
+            <img src="images/tenue-amelioree.jpg" alt="Tenue améliorée">
+            <img src="images/casque.jpg" alt="Détail du casque">
+            <img src="images/bottes.jpg" alt="Détail des bottes">
+        </div>
     </main>
     <footer>
         <p>© 2026 - Projet Tintin sur la Lune</p>
